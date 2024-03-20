@@ -9,14 +9,14 @@ class modAnalyzeTest {
 
     @Test
     void analyzeSadMood() {
-        modAnalyze sad = new modAnalyze();
-        String result = sad.analyzeMood("I am in the sad Mood");
+        modAnalyze sad = new modAnalyze("I am in the sad Mood");
+        String result = sad.analyzeMood();
         Assertions.assertEquals("SAD", result);
     }
     @Test
     void analyzeAnySadMood() {
-        modAnalyze sad = new modAnalyze();
-        String result = sad.analyzeMood("I am in the any Mood");
+        modAnalyze sad = new modAnalyze("I am in the any Mood");
+        String result = sad.analyzeMood();
         Assertions.assertEquals("HAPPY", result);
     }
 }
