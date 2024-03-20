@@ -1,10 +1,10 @@
 package org.example;
 
 public class modAnalyze {
-     private String message;
-
+     private String message ;
+     
     public modAnalyze() {
-
+        this.message = "I am in the sad Mood";
     }
     public modAnalyze(String message) {
         this.message = message;

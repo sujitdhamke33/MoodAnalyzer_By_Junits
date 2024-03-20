@@ -19,4 +19,12 @@ class modAnalyzeTest {
         String result = sad.analyzeMood();
         Assertions.assertEquals("HAPPY", result);
     }
+
+    @Test
+    void analyzeSadNonParaMood() {
+        modAnalyze sad = new modAnalyze();
+        String result = sad.analyzeMood();
+        Assertions.assertEquals("SAD", result);
+    }
+
 }
