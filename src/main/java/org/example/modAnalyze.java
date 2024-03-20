@@ -4,7 +4,7 @@ public class modAnalyze {
      private String message ;
      
     public modAnalyze() {
-        this.message = "I am in the sad Mood";
+        this.message = "I am in the any Mood";
     }
     public modAnalyze(String message) {
         this.message = message;

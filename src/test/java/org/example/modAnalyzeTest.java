@@ -15,16 +15,16 @@ class modAnalyzeTest {
     }
     @Test
     void analyzeAnySadMood() {
-        modAnalyze sad = new modAnalyze("I am in the any Mood");
-        String result = sad.analyzeMood();
+        modAnalyze happy = new modAnalyze("I am in the any Mood");
+        String result = happy.analyzeMood();
         Assertions.assertEquals("HAPPY", result);
     }
 
     @Test
     void analyzeSadNonParaMood() {
-        modAnalyze sad = new modAnalyze();
-        String result = sad.analyzeMood();
-        Assertions.assertEquals("SAD", result);
+        modAnalyze happy = new modAnalyze();
+        String result = happy.analyzeMood();
+        Assertions.assertEquals("HAPPY", result);
     }
 
 }
