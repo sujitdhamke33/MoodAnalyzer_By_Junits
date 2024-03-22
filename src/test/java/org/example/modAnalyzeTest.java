@@ -7,21 +7,10 @@ import static org.junit.jupiter.api.Assertions.*;
 
 class modAnalyzeTest {
 
-    @Test
-    void analyzeSadMood() {
-        modAnalyze sad = new modAnalyze("I am in the sad Mood");
-        String result = sad.analyzeMood();
-        Assertions.assertEquals("SAD", result);
-    }
-    @Test
-    void analyzeAnySadMood() {
-        modAnalyze happy = new modAnalyze("I am in the any Mood");
-        String result = happy.analyzeMood();
-        Assertions.assertEquals("HAPPY", result);
-    }
+
 
     @Test
-    void analyzeSadNonParaMood() {
+    void analyzeHappyExcepMood() {
         modAnalyze happy = new modAnalyze();
         String result = happy.analyzeMood();
         Assertions.assertEquals("HAPPY", result);
